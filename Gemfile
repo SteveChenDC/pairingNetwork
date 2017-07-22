@@ -7,6 +7,7 @@ end
 
 
 gem 'devise'
+gem 'faker'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootswatch-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

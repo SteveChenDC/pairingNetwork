@@ -2,4 +2,8 @@
   <%= user.name %>
   <%= user.email %>
   <img src=<%= user.img %> >
+  <% user.languages.each do |lang| %>
+    <%= lang.name %>
+  <% end %>
+  <%= link_to "user profile", user %>
 <% end %>

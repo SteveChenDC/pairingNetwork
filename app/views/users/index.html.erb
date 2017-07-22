@@ -3,7 +3,7 @@
 <% @users.each do |user| %>
 <div class="single-user">
     <img class="user-image small" src=<%= user.img %> >
-    <div class="username">
+    <div class="username animated rubberBand">
         <%= link_to user.name, user %>
     </div>
     <div class="user-email"><%= user.email %></div>

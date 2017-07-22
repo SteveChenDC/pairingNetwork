@@ -215,7 +215,7 @@ button:hover {
   border: none;
 }
 
-.section {
+.section-form {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -252,4 +252,35 @@ input[type="text"] {
 
 .form-group {
   margin-bottom: 20px;
+}
+
+.center-section {
+    width: 400px;
+    margin-top: 30px;
+}
+
+label {
+    color: white;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    padding: 25px;
+    color:  #5b5b5b;
+}
+
+input::placeholder {
+    color: #aaaaaa;
+}
+
+.styled-select.slate {
+    height: 50px;
+}
+
+.steve {
+    background-color: #481451;
 }

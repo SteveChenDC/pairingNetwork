@@ -1,13 +1,37 @@
-<p>
-  <%= @user.name %>
-</p>
+<div class="user-container">
+  <div class="center-container">
+    <div class="section">
+    <img class="user-image" src=<%= @user.img%>></img>
+    <p class="username">   <%= @user.name %></p>
+    <p>  <%= @user.email %> </p>
 
-<p>
-  <%= @user.email %>
-</p>
+    <button> Github </button>
+    <button> LinkedIn </button>
+  </div>
+  <div class="section">
+    <p class="section-title"> I know these languages </p>
+    <div class="lang-container">
+        <% @user.languages.each do |lang| %>
+          <div class="lang"><%= lang.name %></div>
+        <% end %>
+    </div>
+  </div>
 
-<img src=<%= @user.img%> >
+  <div class="section">
+    <p class="section-title"> Nearby Spaces</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12422.398055747875!2d-77.09673554999999!3d38.8874037!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1500736962519" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-<% @user.languages.each do |lang| %>
-  <%= lang.name %>
-<% end %>
+    <div class="address-container">
+      <div class="single-address-container">
+        <div>
+          <div class="address-name"> Library </div>
+          <div> 2034 Cunningham Drive </div>
+          <div> Alexandria, VA 22244 </div>
+        </div>
+        <button> Copy Address </button>
+      </div>
+    </div>
+  </div>
+  <button class="chat"> Start Chatting </button>
+  </div>
+</div>

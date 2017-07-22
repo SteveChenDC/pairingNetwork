@@ -1,9 +1,20 @@
+
+<div class="user-outer-container">
 <% @users.each do |user| %>
-  <%= user.name %>
-  <%= user.email %>
-  <img src=<%= user.img %> >
-  <% user.languages.each do |lang| %>
-    <%= lang.name %>
-  <% end %>
-  <%= link_to "user profile", user %>
+<div class="single-user">
+    <img class="user-image small" src=<%= user.img %> >
+    <div class="username">
+        <%= link_to user.name, user %>
+    </div>
+    <div class="user-email"><%= user.email %></div>
+    <div class="language-container">
+        <p class="left-align"> Languages: </p>
+        <div class="lang-container">
+            <% user.languages.each do |lang| %>
+            <div class="lang"><%= lang.name %></div>
+            <% end %>
+        </div>
+    </div>
+</div>
 <% end %>
+</div>

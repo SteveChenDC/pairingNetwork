@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+LANGUAGES = ['Ruby', 'JavaScript', 'Java', 'Python', 'Elixir', 'Swift', 'Lisp', 'PHP', 'C', 'C++', 'Go']
+
+LANGUAGES.each do |lang|
+  Language.create(
+    name: lang
+  )
+end

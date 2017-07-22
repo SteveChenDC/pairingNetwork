@@ -1,29 +1,22 @@
-<h2>Sign up</h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "users/shared/links" %>
+  Name:
+<br>
+  <input type="text" name="username" value="Mouse">
+<br>
+Language you need help with: 
+<br>
+<select name="Code_language">
+  <option value="volvo">Javascript</option>
+  <option value="saab">Python</option>
+  <option value="fiat">Ruby</option>
+  <option value="audi">ReactJS</option>
+  <option value="audi">AngularJS</option>
+  <option value="audi">HTML</option>
+  <option value="audi">Elixir</option>
+  <option value="audi">PHP</option>
+  <option value="audi">Swift</option>
+  <option value="audi">C++</option>
+</select>
+<br>
+Zipcode:
+<br>
+<input type="text" name="username" value="(Enter Zip Code)">

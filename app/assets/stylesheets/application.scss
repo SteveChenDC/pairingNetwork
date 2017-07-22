@@ -14,3 +14,53 @@
  *= require_tree .
  *= require_self
  */
+
+
+.steve {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #AA1E38;
+  padding: 15px 10px;  
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+    height:40px;
+    padding-left: 5px;
+    width: 100%;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.styled-select {
+   height: 29px;
+   overflow: hidden;
+   width: 100%;
+}
+
+.styled-select.slate {
+   background-color: #fff;
+   height: 34px;
+   width: 100%;
+}
+
+.styled-select.slate select {
+   border: none;
+   font-size: 16px;
+   height: 34px;
+   width: 268px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
